@@ -42,3 +42,4 @@ docker exec <container_id> pytest app/tests
 ## Note
 1. Test coverage is not 100%, most interesting parts are covered
 2. Database url is left hardcoded and left to its name test.db due to simplicity
+3. Dependencies are left non-locked due to simplicity, although best practice is to lock them to a specific version or subversion(i.e fastapi==0.95.1)
