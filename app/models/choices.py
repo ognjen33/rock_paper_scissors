@@ -1,10 +1,10 @@
 from sqlalchemy import Column, Integer, Date, Enum as SqlEnum, Text
-from sqlalchemy.ext.declarative import declarative_base
 from enum import Enum
 from sqlalchemy.types import TypeDecorator
 import json
+from app.models.base import Base
 
-Base = declarative_base()
+
 
 # SQLite does not support native array tipe, this is workaround
 class JSONEncodedList(TypeDecorator):
